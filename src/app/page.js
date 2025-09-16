@@ -21,6 +21,9 @@ export default function Home() {
           <a href="#" style={{ color: "#fff", margin: "0 10px" }}>
             Contato
           </a>
+          <a href="#" style={{ color: "#fff", margin: "0 10px" }}>
+            Mais
+          </a>
         </nav>
       </header>
 
