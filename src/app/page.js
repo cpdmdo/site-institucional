@@ -4,7 +4,7 @@ export default function Home() {
       {/* Cabeçalho */}
       <header
         style={{
-          backgroundColor: "#ff0000",
+          backgroundColor: "#08600fff",
           color: "#fff",
           padding: "20px",
           textAlign: "center",
