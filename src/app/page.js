@@ -23,9 +23,10 @@ export default function Home() {
           </a>
           <a href="#" style={{ color: "#fff", margin: "0 10px" }}>
             Mais
-            <a href="#" style={{ color: "#fff", margin: "0 10px" }}>
-              Testes2
-            </a>
+          </a>
+          <a href="#" style={{ color: "#fff", margin: "0 10px" }}>
+            Teste2
+          </a>
         </nav>
       </header>
 
