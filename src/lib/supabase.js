@@ -7,3 +7,4 @@ const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_eyJhbGciOiJIUzI1NiIsInR
 
 // Cria uma única instância do cliente Supabase
 export const supabase = createClient(supabaseUrl, supabaseAnonKey)
+//testes.
