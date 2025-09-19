@@ -1,6 +1,8 @@
-// pages/login.js
+// src/app/login/page.js
+"use client"
+
 import { useState } from 'react'
-import { supabase } from '../lib/supabase'
+import { supabase } from '@/lib/supabase' // Use @ para alias de pasta
 
 export default function Login() {
     const [email, setEmail] = useState('')
