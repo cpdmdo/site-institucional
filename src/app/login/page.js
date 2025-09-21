@@ -2,7 +2,7 @@
 "use client"
 
 import { useState } from 'react'
-import { supabase } from '@/lib/supabase' // Use @ para alias de pasta
+import { supabase } from '../../lib/supabase-client' // Caminho corrigido
 
 export default function Login() {
     const [email, setEmail] = useState('')
