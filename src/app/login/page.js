@@ -1,33 +1,33 @@
 // src/app/login/page.js
-"use client"
+"use client";
 
-import { useState } from 'react'
-import { supabase } from '../../lib/supabase-client' // Caminho corrigido
+import { useState } from 'react';
+import { supabase } from '../../lib/supabase-client'; // Caminho corrigido para o cliente Supabase
 
 export default function Login() {
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
-    const [loading, setLoading] = useState(false)
-    const [error, setError] = useState(null)
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
 
     const handleLogin = async (e) => {
-        e.preventDefault()
-        setLoading(true)
-        setError(null)
+        e.preventDefault();
+        setLoading(true);
+        setError(null);
 
         const { error } = await supabase.auth.signInWithPassword({
             email,
             password,
-        })
+        });
 
         if (error) {
-            setError(error.message)
-            setLoading(false)
+            setError(error.message);
+            setLoading(false);
         } else {
             // Redireciona para o painel administrativo após o login
-            window.location.href = '/painel-administrativo'
+            window.location.href = '/painel-administrativo';
         }
-    }
+    };
 
     return (
         <div>
@@ -59,5 +59,5 @@ export default function Login() {
                 </button>
             </form>
         </div>
-    )
+    );
 }
