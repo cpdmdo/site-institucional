@@ -40,7 +40,7 @@ function FormularioNoticia({ noticia, onClose, onSave }) {
                 console.error('Erro ao adicionar notícia:', error);
             }
         }
-        
+
         setLoading(false);
         onSave();
     };
@@ -184,7 +184,7 @@ export default function PainelAdministrativo() {
                 .from('noticias')
                 .delete()
                 .eq('id', id);
-            
+
             if (error) {
                 console.error('Erro ao excluir notícia:', error);
             }
@@ -207,7 +207,6 @@ export default function PainelAdministrativo() {
                 <p>Carregando...</p>
             </div>
         );
-    );
     }
 
     return (
